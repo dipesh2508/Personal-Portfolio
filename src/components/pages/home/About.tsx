@@ -9,20 +9,7 @@ const About = () => {
   const floatingRef = useRef<HTMLDivElement>(null)
 
   useEffect(() => {
-    // Animate floating numbers
-    if (floatingRef.current) {
-      animate('.floating-stat', {
-        translateY: [0, -20, 0],
-        rotate: [0, 5, -5, 0],
-        scale: [1, 1.1, 1],
-        delay: stagger(200),
-        easing: 'easeInOutSine',
-        duration: 4000,
-        loop: true,
-      })
-    }
-
-    // Animate text reveal
+    // Remove excessive floating animations - keep only text reveal
     if (statsRef.current) {
       animate('.reveal-text', {
         translateY: [50, 0],
@@ -215,7 +202,7 @@ const About = () => {
                   'Served on IEEE Delhi Student team for one year (2023-24)',
                   'Active contributor in Hacktoberfest 2023 & 2024',
                   'Published research in Web Architecture, Blockchain & Healthcare',
-                  'Provided 1:1 mentorship with personalized roadmaps'
+                  'Provided 1:1 mentorship with personalized roadmaps to mentees'
                 ].map((highlight, index) => (
                   <motion.div
                     key={index}
@@ -250,11 +237,10 @@ const About = () => {
                 {stats.map((stat, index) => (
                   <motion.div
                     key={index}
-                    className="floating-stat text-center space-y-3"
+                    className="text-center space-y-3"
                     whileHover={{ 
-                      scale: 1.05,
-                      rotate: [0, -2, 2, 0],
-                      transition: { duration: 0.3 }
+                      scale: 1.02,
+                      transition: { duration: 0.2 }
                     }}
                   >
                     <motion.div
@@ -284,8 +270,8 @@ const About = () => {
                   </motion.div>
                 ))}
               </div>
-
-              {/* Floating Elements Inside Card */}
+            </div>
+                          {/* Floating Elements Inside Card */}
               <motion.div
                 animate={{
                   rotate: [0, 360],
@@ -311,7 +297,6 @@ const About = () => {
                 }}
                 className="absolute bottom-4 left-4 w-6 h-6 bg-gradient-to-br from-accent-400/20 to-primary-400/20 rounded-sm"
               />
-            </div>
           </motion.div>
         </div>
 

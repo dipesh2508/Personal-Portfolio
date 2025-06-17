@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import { Space_Grotesk, Inter, JetBrains_Mono, Allura } from "next/font/google";
 import { ThemeProvider } from "next-themes";
 import "./globals.css";
+import Navbar from "@/components/shared/Navbar";
+import Footer from "@/components/shared/Footer";
 
 const allura = Allura({ 
   variable: "--font-allura",
@@ -70,7 +72,11 @@ export default function RootLayout({
           enableSystem={false}
           storageKey="portfolio-theme"
         >
+          <main>
+          <Navbar />
           {children}
+          <Footer />
+          </main>
         </ThemeProvider>
       </body>
     </html>

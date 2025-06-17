@@ -137,6 +137,8 @@
   --color-popover-foreground: var(--popover-foreground);
   --color-primary: var(--primary);
   --color-primary-foreground: var(--primary-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
   --color-secondary: var(--secondary);
   --color-secondary-foreground: var(--secondary-foreground);
   --color-muted: var(--muted);
@@ -191,6 +193,8 @@
     --popover-foreground: var(--foreground);
     --primary: var(--primary-400);
     --primary-foreground: var(--primary-900);
+    --accent: var(--accent-800);
+    --accent-foreground: var(--accent-100);
     --secondary: var(--accent-800);
     --secondary-foreground: var(--accent-100);
     --muted: var(--accent-800);
@@ -241,6 +245,8 @@
   --popover-foreground: var(--foreground);
   --primary: var(--primary-400);
   --primary-foreground: var(--primary-900);
+  --accent: var(--accent-800);
+  --accent-foreground: var(--accent-100);
   --secondary: var(--accent-800);
   --secondary-foreground: var(--accent-100);
   --muted: var(--accent-800);
