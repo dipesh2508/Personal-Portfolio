@@ -384,11 +384,12 @@ const Hero = () => {
           className="max-w-7xl"
         >
           <p className="text-base sm:text-lg md:text-xl text-foreground/60 leading-relaxed font-inter">
-            I create{" "}
+            I weave{" "}
             <span className="text-primary-600 font-semibold">
-              exceptional digital experiences
-            </span>{" "}            that blend cutting-edge technology with stunning design. 
-            Let&apos;s build something amazing together.
+               together threads of creativity 
+              
+            </span>{" "}
+            and logic, crafting expansive websites that sing with beauty, respond to every need, and delight the user&apos;s senses.
           </p>
         </motion.div>
 
@@ -403,12 +404,12 @@ const Hero = () => {
             stiffness: 100,
             damping: 15
           }}
-          className="flex flex-col sm:flex-row gap-4 mt-6"
+          className="flex flex-col sm:flex-row gap-2 mt-2 md:gap-4 md:mt-6"
         >
           <motion.button
             whileHover={{ scale: 1.02, y: -2 }}
             whileTap={{ scale: 0.98 }}
-            className="px-8 py-4 bg-primary-600 hover:bg-primary-700 text-white font-semibold text-lg rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 font-inter"
+            className="px-4 py-4 md:px-8 bg-primary-600 hover:bg-primary-700 text-white font-semibold text-lg rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 font-inter"
           >
             Let&apos;s Work Together
           </motion.button>
@@ -416,7 +417,7 @@ const Hero = () => {
           <motion.button
             whileHover={{ scale: 1.02, y: -2 }}
             whileTap={{ scale: 0.98 }}
-            className="px-8 py-4 bg-transparent border-2 border-primary-300 text-primary-600 hover:bg-primary-50 dark:hover:bg-primary-900/20 font-semibold text-lg rounded-xl transition-all duration-300 font-inter"
+            className="px-4 md:px-8 py-4 bg-transparent border-2 border-primary-300 text-primary-600 hover:bg-primary-50 dark:hover:bg-primary-900/20 font-semibold text-lg rounded-xl transition-all duration-300 font-inter"
           >
             View Portfolio
           </motion.button>

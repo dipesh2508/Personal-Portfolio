@@ -1,3 +1,4 @@
+import About from "@/components/pages/home/About";
 import Hero from "@/components/pages/home/Hero";
 import Navbar from "@/components/shared/Navbar";
 
@@ -6,6 +7,7 @@ export default function Home() {
     <div>
       <Navbar />
       <Hero />
+      <About />
     </div>
   );
 }

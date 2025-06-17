@@ -4,6 +4,9 @@ import React, { useState, useEffect } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
 import { useTheme } from 'next-themes'
 import { Sun, Moon, Menu, X } from 'lucide-react'
+import LogoBlack from '@/assets/Personal Logo.svg'
+import LogoWhite from '@/assets/Personal Logo White.svg'
+import Image from 'next/image'
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false)
@@ -40,8 +43,8 @@ const Navbar = () => {
       transition={{ duration: 0.8, ease: 'easeOut' }}
       className="fixed top-0 left-0 right-0 z-50 bg-white/5 dark:bg-black/5 backdrop-blur-xl backdrop-saturate-150 border-b border-white/10 dark:border-white/5"
       style={{
-        backdropFilter: 'blur(20px) saturate(110%) contrast(120%) brightness(110%)',
-        WebkitBackdropFilter: 'blur(20px) saturate(180%) contrast(120%) brightness(110%)',
+        backdropFilter: 'blur(20px) saturate(50%) contrast(120%) brightness(110%)',
+        WebkitBackdropFilter: 'blur(20px) saturate(50%) contrast(120%) brightness(110%)',
       }}
     >
       {/* Glass overlay for extra depth */}
@@ -55,9 +58,18 @@ const Navbar = () => {
             whileHover={{ scale: 1.05 }}
             className="flex-shrink-0"
           >
-            <a href="#home" className="text-2xl font-bold font-space-grotesk">
-              <span className="text-primary">Dipesh</span>
-              <span className="text-foreground">Ranjan</span>
+            <a href="#home" className="flex items-center space-x-3">
+              <Image
+                src={resolvedTheme === 'dark' ? LogoWhite : LogoBlack}
+                alt="Dipesh Ranjan Logo"
+                width={40}
+                height={40}
+                className="h-10 w-auto"
+              />
+              <span className="text-xl font-bold font-space-grotesk hidden md:inline-block">
+                <span className="text-primary">Dipesh</span>
+                <span className="text-foreground"> Ranjan</span>
+              </span>
             </a>
           </motion.div>
 
@@ -164,8 +176,8 @@ const Navbar = () => {
             transition={{ duration: 0.3, ease: 'easeInOut' }}
             className="md:hidden bg-white/10 dark:bg-black/10 backdrop-blur-xl backdrop-saturate-150 border-t border-white/10 dark:border-white/5"
             style={{
-              backdropFilter: 'blur(20px) saturate(180%) contrast(120%) brightness(110%)',
-              WebkitBackdropFilter: 'blur(20px) saturate(180%) contrast(120%) brightness(110%)',
+              backdropFilter: 'blur(20px) saturate(50%) contrast(120%) brightness(110%)',
+              WebkitBackdropFilter: 'blur(20px) saturate(50%) contrast(120%) brightness(110%)',
             }}
           >
             {/* Glass overlay for mobile menu */}
