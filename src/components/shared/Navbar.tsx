@@ -38,9 +38,17 @@ const Navbar = () => {
       initial={{ y: -100, opacity: 0 }}
       animate={{ y: 0, opacity: 1 }}
       transition={{ duration: 0.8, ease: 'easeOut' }}
-      className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-lg border-b border-border"
+      className="fixed top-0 left-0 right-0 z-50 bg-white/5 dark:bg-black/5 backdrop-blur-xl backdrop-saturate-150 border-b border-white/10 dark:border-white/5"
+      style={{
+        backdropFilter: 'blur(20px) saturate(110%) contrast(120%) brightness(110%)',
+        WebkitBackdropFilter: 'blur(20px) saturate(180%) contrast(120%) brightness(110%)',
+      }}
     >
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      {/* Glass overlay for extra depth */}
+      <div className="absolute inset-0 bg-gradient-to-r from-primary/3 via-transparent to-accent/3 opacity-50"></div>
+      <div className="absolute inset-0 bg-gradient-to-b from-white/8 via-white/2 to-transparent dark:from-white/4 dark:via-white/1"></div>
+      
+      <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <motion.div
@@ -154,9 +162,15 @@ const Navbar = () => {
             animate={{ opacity: 1, height: 'auto' }}
             exit={{ opacity: 0, height: 0 }}
             transition={{ duration: 0.3, ease: 'easeInOut' }}
-            className="md:hidden bg-background/95 backdrop-blur-lg border-t border-border"
+            className="md:hidden bg-white/10 dark:bg-black/10 backdrop-blur-xl backdrop-saturate-150 border-t border-white/10 dark:border-white/5"
+            style={{
+              backdropFilter: 'blur(20px) saturate(180%) contrast(120%) brightness(110%)',
+              WebkitBackdropFilter: 'blur(20px) saturate(180%) contrast(120%) brightness(110%)',
+            }}
           >
-            <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+            {/* Glass overlay for mobile menu */}
+            <div className="absolute inset-0 bg-gradient-to-b from-white/5 to-transparent dark:from-white/2"></div>
+            <div className="relative px-2 pt-2 pb-3 space-y-1 sm:px-3">
               {navItems.map((item, index) => (
                 <motion.a
                   key={item.name}

@@ -1,7 +1,13 @@
 import type { Metadata } from "next";
-import { Space_Grotesk, Inter, JetBrains_Mono } from "next/font/google";
+import { Space_Grotesk, Inter, JetBrains_Mono, Allura } from "next/font/google";
 import { ThemeProvider } from "next-themes";
 import "./globals.css";
+
+const allura = Allura({ 
+  variable: "--font-allura",
+  subsets: ['latin'],
+  weight: ["400"]
+})
 
 const spaceGrotesk = Space_Grotesk({
   variable: "--font-space-grotesk",
@@ -33,7 +39,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <body className={`${spaceGrotesk.variable} ${inter.variable} ${jetbrainsMono.variable} antialiased`}>
+      <body className={`${spaceGrotesk.variable} ${inter.variable} ${jetbrainsMono.variable} ${allura.variable} antialiased`}>
         <ThemeProvider
           attribute="class"
           defaultTheme="light"
