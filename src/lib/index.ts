@@ -82,7 +82,7 @@ export const projects: IProject[] = [
       {
         name: "Isheta Aggarwal",
         role: "Frontend & UI/UX Designer",
-        social: "https://github.com/Isheta20?tab=overview&from=2025-04-01&to=2025-04-30",
+        social: "https://github.com/Isheta20",
         platform: "github",
       },
     ],
@@ -144,7 +144,7 @@ export const projects: IProject[] = [
       {
         name: "Isheta Aggarwal",
         role: "Frontend & UI/UX Designer",
-        social: "https://github.com/Isheta20?tab=overview&from=2025-04-01&to=2025-04-30",
+        social: "https://github.com/Isheta20",
         platform: "github",
       },
     ],
@@ -218,7 +218,7 @@ export const projects: IProject[] = [
       {
         name: "Isheta Aggarwal",
         role: "UI/UX Designer",
-        social: "https://github.com/Isheta20?tab=overview&from=2025-04-01&to=2025-04-30",
+        social: "https://github.com/Isheta20",
         platform: "github",
       },
       {
@@ -265,7 +265,7 @@ export const projects: IProject[] = [
       {
         name: "Isheta Aggarwal",
         role: "UI/UX Designer",
-        social: "https://github.com/Isheta20?tab=overview&from=2025-04-01&to=2025-04-30",
+        social: "https://github.com/Isheta20",
         platform: "github",
       },
       {
