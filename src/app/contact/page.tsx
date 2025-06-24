@@ -32,6 +32,7 @@ import {
 } from '@/components/ui/form'
 import { Input } from '@/components/ui/input'
 import { Textarea } from '@/components/ui/textarea'
+import Link from 'next/link'
 
 const formSchema = z.object({
   name: z.string().min(2, 'Name must be at least 2 characters'),
@@ -513,14 +514,16 @@ const Contact = () => {
                   Let&apos;s discuss your project and explore how we can work together.
                 </p>
                 <div className="flex gap-3">
-                  <motion.button
-                    whileHover={{ scale: 1.05 }}
-                    whileTap={{ scale: 0.95 }}
-                    className="flex-1 px-4 py-2.5 bg-primary-600 hover:bg-primary-700 text-white text-sm font-medium rounded-lg transition-colors duration-200 flex items-center justify-center gap-2"
-                  >
-                    <Calendar className="w-4 h-4" />
-                    Schedule Call
-                  </motion.button>
+                  <Link href="https://calendly.com/sinhadipesh25" target="_blank" rel="noopener noreferrer">
+                    <motion.button
+                      whileHover={{ scale: 1.05 }}
+                      whileTap={{ scale: 0.95 }}
+                      className="flex-1 px-4 py-2.5 bg-primary-600 hover:bg-primary-700 text-white text-sm font-medium rounded-lg transition-colors duration-200 flex items-center justify-center gap-2"
+                      >
+                        <Calendar className="w-4 h-4" />
+                        Schedule Call
+                    </motion.button>
+                  </Link>
                   <motion.a
                     href="mailto:sinhadipesh25@gmail.com"
                     whileHover={{ scale: 1.05 }}
