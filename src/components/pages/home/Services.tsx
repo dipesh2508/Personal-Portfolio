@@ -20,7 +20,9 @@ const Services = () => {
   const yParallax4 = useTransform(scrollYProgress, [0, 1], [0, -80])
   const rotateParallax = useTransform(scrollYProgress, [0, 1], [0, 360])
   const scaleParallax = useTransform(scrollYProgress, [0, 1], [1, 1.2])
-  const opacityParallax = useTransform(scrollYProgress, [0, 0.5, 1], [0.3, 1, 0.3]) 
+  const opacityParallax = useTransform(scrollYProgress, [0, 0.5, 1], [0.3, 1, 0.3])
+  const rotateBottomLeft = useTransform(scrollYProgress, [0, 1], [-45, 315])
+
     const services = [
     // Row 1: Frontend (wide), Backend (wide), UI/UX (slim)
     {
@@ -109,11 +111,13 @@ const Services = () => {
               </clipPath>
             </defs>
           </svg>
-        </motion.div>        <motion.div
+        </motion.div>        
+        <motion.div
           style={{ 
             y: yParallax2, 
             scale: scaleParallax,
-            opacity: opacityParallax 
+            opacity: opacityParallax, 
+            rotate: rotateBottomLeft,
           }}
           className="absolute bottom-32 left-12 w-32 h-32"
         >
@@ -131,7 +135,8 @@ const Services = () => {
               </clipPath>
             </defs>
           </svg>
-        </motion.div>        <motion.div
+        </motion.div>
+        <motion.div
           style={{ 
             y: yParallax3, 
             rotate: rotateParallax,

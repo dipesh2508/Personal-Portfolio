@@ -62,8 +62,8 @@ const About = () => {
             </g>
             <defs>
               <linearGradient id="paint0_linear_104_40" x1="27.5" y1="19" x2="149" y2="174.5" gradientUnits="userSpaceOnUse">
-                <stop stopColor="var(--primary-500)" stopOpacity="0.16" />
-                <stop offset="1" stopColor="var(--accent-400)" stopOpacity="0.10" />
+                <stop stopColor="#F4A232" stopOpacity="0.26" />
+                <stop offset="1" stopColor="#F8A8A3" stopOpacity="0.20" />
               </linearGradient>
               <clipPath id="clip0_104_40">
                 <rect width="200" height="200" fill="white"/>
@@ -97,15 +97,16 @@ const About = () => {
             </g>
             <defs>
               <linearGradient id="paint0_linear_105_351" x1="20.5" y1="16" x2="100" y2="200" gradientUnits="userSpaceOnUse">
-                <stop stopColor="var(--accent-400)" stopOpacity="0.18" />
-                <stop offset="1" stopColor="var(--primary-500)" stopOpacity="0.12" />
+                <stop stopColor="#34A9A3" stopOpacity="0.18" />
+                <stop offset="1" stopColor="#34A423" stopOpacity="0.22" />
               </linearGradient>
               <clipPath id="clip0_105_351">
                 <rect width="200" height="200" fill="white"/>
               </clipPath>
             </defs>
           </svg>
-        </motion.div>        <motion.div
+        </motion.div>        
+        <motion.div
           initial={{ opacity: 0, scale: 0 }}
           animate={{ 
             opacity: 1, 
@@ -132,8 +133,8 @@ const About = () => {
             </g>
             <defs>
               <linearGradient id="paint0_linear_119_243" x1="177" y1="-9.23648e-06" x2="39.5" y2="152.5" gradientUnits="userSpaceOnUse">
-                <stop stopColor="var(--accent-600)" stopOpacity="0.14" />
-                <stop offset="1" stopColor="var(--primary-300)" stopOpacity="0.08" />
+                <stop stopColor="#6ab100" stopOpacity="0.14" />
+                <stop offset="1" stopColor="#65AB87" stopOpacity="0.08" />
               </linearGradient>
               <clipPath id="clip0_119_243">
                 <rect width="200" height="200" fill="white"/>
@@ -170,8 +171,8 @@ const About = () => {
             </g>
             <defs>
               <linearGradient id="paint0_linear_227_29" x1="100" y1="0" x2="100" y2="200" gradientUnits="userSpaceOnUse">
-                <stop stopColor="var(--primary-400)" stopOpacity="0.13" />
-                <stop offset="1" stopColor="var(--accent-300)" stopOpacity="0.07" />
+                <stop stopColor="#ffb100" stopOpacity="0.10" />
+                <stop offset="1" stopColor="#A28AF3" stopOpacity="0.17" />
               </linearGradient>
               <clipPath id="clip0_227_29">
                 <rect width="200" height="200" fill="white"/>
@@ -361,10 +362,11 @@ const About = () => {
                       d="M100 200C155.228 200 200 155.228 200 100C200 44.7715 155.228 0 100 0C44.7715 0 0 44.7715 0 100C0 155.228 44.7715 200 100 200ZM100 188C148.601 188 188 148.601 188 100C188 51.3989 148.601 12 100 12C51.3989 12 12 51.3989 12 100C12 148.601 51.3989 188 100 188ZM100 176C141.974 176 176 141.974 176 100C176 58.0264 141.974 24 100 24C58.0264 24 24 58.0264 24 100C24 141.974 58.0264 176 100 176ZM100 164C135.346 164 164 135.346 164 100C164 64.6538 135.346 36 100 36C64.6538 36 36 64.6538 36 100C36 135.346 64.6538 164 100 164ZM152 100C152 128.719 128.719 152 100 152C71.2812 152 48 128.719 48 100C48 71.2812 71.2812 48 100 48C128.719 48 152 71.2812 152 100ZM140 100C140 122.091 122.091 140 100 140C77.9086 140 60 122.091 60 100C60 77.9086 77.9086 60 100 60C122.091 60 140 77.9086 140 100Z" 
                       fill="url(#paint0_linear_227_4)"
                     />
-                  </g>                  <defs>
+                  </g>                  
+                  <defs>
                     <linearGradient id="paint0_linear_227_4" x1="27.5" y1="19" x2="149" y2="174.5" gradientUnits="userSpaceOnUse">
-                      <stop stopColor="var(--primary-400)" stopOpacity="0.15" />
-                      <stop offset="1" stopColor="var(--accent-300)" stopOpacity="0.1" />
+                      <stop stopColor="#F2AFA3" stopOpacity="0.15" />
+                      <stop offset="1" stopColor="#4567A9" stopOpacity="0.21" />
                     </linearGradient>
                     <clipPath id="clip0_227_4">
                       <rect width="200" height="200" fill="white"/>

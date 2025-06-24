@@ -67,8 +67,8 @@ const Hero = () => {
             </g>
             <defs>
               <linearGradient id="paint0_linear_238_1269" x1="14" y1="26" x2="179" y2="179.5" gradientUnits="userSpaceOnUse">
-                <stop stopColor="oklch(70% 0.15 168)"/>
-                <stop offset="1" stopColor="oklch(96% 0.02 180)"/>
+                <stop stopColor="oklch(75% 0.25 285)"/>
+                <stop offset="1" stopColor="oklch(90% 0.15 320)"/>
               </linearGradient>
               <clipPath id="clip0_238_1269">
                 <rect width="200" height="200" fill="white"/>
@@ -102,8 +102,8 @@ const Hero = () => {
             </g>
             <defs>
               <linearGradient id="paint0_linear_236_1056" x1="14" y1="26" x2="179" y2="179.5" gradientUnits="userSpaceOnUse">
-                <stop stopColor="oklch(62% 0.18 166)"/>
-                <stop offset="1" stopColor="oklch(92% 0.05 175)"/>
+                <stop stopColor="oklch(70% 0.22 200)"/>
+                <stop offset="1" stopColor="oklch(85% 0.12 220)"/>
               </linearGradient>
               <clipPath id="clip0_236_1056">
                 <rect width="200" height="200" fill="white"/>
@@ -135,8 +135,8 @@ const Hero = () => {
             <path d="M100.106 0L115 54.1591L158.884 19.0983L139.1 71.6687L195.211 69.0983L148.306 100L195.211 130.902L139.1 128.331L158.884 180.902L115 145.841L100.106 200L85.211 145.841L41.3271 180.902L61.111 128.331L5 130.902L51.9057 100L5 69.0983L61.111 71.6687L41.3271 19.0983L85.211 54.1591L100.106 0Z" fill="url(#paint0_linear_103_4)"/>
             <defs>
               <linearGradient id="paint0_linear_103_4" x1="31.1541" y1="19" x2="153.991" y2="168.516" gradientUnits="userSpaceOnUse">
-                <stop stopColor="oklch(58% 0.06 240)"/>
-                <stop offset="1" stopColor="oklch(95% 0.02 240)"/>
+                <stop stopColor="oklch(65% 0.20 60)"/>
+                <stop offset="1" stopColor="oklch(85% 0.08 80)"/>
               </linearGradient>
             </defs>
           </svg>
@@ -167,8 +167,8 @@ const Hero = () => {
             </g>
             <defs>
               <linearGradient id="paint0_linear_103_21" x1="100.081" y1="0" x2="100.081" y2="200" gradientUnits="userSpaceOnUse">
-                <stop stopColor="oklch(54% 0.20 164)"/>
-                <stop offset="1" stopColor="oklch(85% 0.08 172)"/>
+                <stop stopColor="oklch(65% 0.25 340)"/>
+                <stop offset="1" stopColor="oklch(80% 0.15 10)"/>
               </linearGradient>
               <clipPath id="clip0_103_21">
                 <rect width="200" height="200" fill="white"/>
@@ -200,8 +200,8 @@ const Hero = () => {
             </g>
             <defs>
               <linearGradient id="paint0_linear_236_1056_med" x1="14" y1="26" x2="179" y2="179.5" gradientUnits="userSpaceOnUse">
-                <stop stopColor="oklch(78% 0.12 170)"/>
-                <stop offset="1" stopColor="oklch(96% 0.02 180)"/>
+                <stop stopColor="oklch(70% 0.18 140)"/>
+                <stop offset="1" stopColor="oklch(85% 0.10 160)"/>
               </linearGradient>
               <clipPath id="clip0_236_1056_med">
                 <rect width="200" height="200" fill="white"/>
