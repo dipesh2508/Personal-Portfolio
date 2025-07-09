@@ -7,6 +7,7 @@ import { Sun, Moon, Menu, X } from 'lucide-react'
 import LogoBlack from '@/assets/Personal Logo.svg'
 import LogoWhite from '@/assets/Personal Logo White.svg'
 import Image from 'next/image'
+import Link from 'next/link'
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false)
@@ -59,7 +60,7 @@ const Navbar = () => {
             whileHover={{ scale: 1.05 }}
             className="flex-shrink-0"
           >
-            <a href="#home" className="flex items-center space-x-3">
+            <Link href="/#home" className="flex items-center space-x-3">
               <Image
                 src={resolvedTheme === 'dark' ? LogoWhite : LogoBlack}
                 alt="Dipesh Ranjan Logo"
@@ -71,7 +72,7 @@ const Navbar = () => {
                 <span className="text-primary">Dipesh</span>
                 <span className="text-foreground"> Ranjan</span>
               </span>
-            </a>
+            </Link>
           </motion.div>
 
           {/* Desktop Navigation */}

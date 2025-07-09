@@ -20,6 +20,7 @@ import {
   Instagram
 } from 'lucide-react'
 import { projects } from '@/lib'
+import Link from 'next/link'
 
 const Projects = () => {
   const containerRef = useRef<HTMLDivElement>(null)
@@ -622,6 +623,7 @@ const Projects = () => {
             Interested in collaborating on a project? Let&apos;s build something amazing together.
           </motion.p>
           
+          <Link href="/contact" passHref>
           <motion.button
             whileHover={{ 
               scale: 1.05, 
@@ -633,10 +635,11 @@ const Projects = () => {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6, delay: 0.9 }}
-            className="px-8 py-4 bg-gradient-to-r from-primary-600 to-accent-600 hover:from-primary-700 hover:to-accent-700 text-white font-semibold text-lg rounded-2xl shadow-lg transition-all duration-300 font-inter flex items-center gap-2 mx-auto"
+            className="px-8 py-4 bg-gradient-to-r from-primary-600 to-accent-600 hover:from-primary-700 hover:to-accent-700 text-white font-semibold text-lg rounded-2xl shadow-lg transition-all duration-300 font-inter flex items-center gap-2 mx-auto hover:cursor-pointer"
           >
             Let&apos;s Work Together <ChevronRight className="w-5 h-5" />
           </motion.button>
+          </Link>
         </motion.div>
       </div>
     </section>
